@@ -1,78 +1,94 @@
 .hero-section {
-  background-image: url('../img/tickets_hero_bg.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  position: relative;
-  z-index: -1;
+    background-image: url('../img/tickets_hero_bg.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
 
-}
-
-.hero-section h1 {
-  font-size: 3em;
-  margin: 0 0 10px;
-}
-
-.hero-section p {
-  font-size: 2em;
-  margin: 0 0 10px;
 }
 
 .tickets-content {
-  display: flex;
-  flex-direction: column;
-  max-width: 100%;
-  height: 100%;
-  padding: 20px;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: 100%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .ticket-section {
-  margin-top: 6em;
-  margin-bottom: 6em;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    margin-top: 6em;
+    margin-bottom: 6em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticket-section iframe {
+    height: 315px;
+    width: 560px;
 }
 
 table {
-  width: 50%;
-  border-collapse: collapse;
-  margin: 20px 0;
-  font-family: Arial, sans-serif;
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
 }
 
 caption {
-  padding-bottom: 1em;
+    padding-bottom: 1em;
 }
 
 th, td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
 }
 
 th {
-  background-color: #f4f4f4;
-  font-weight: bold;
+    background-color: #f4f4f4;
+    font-weight: bold;
 }
 
 tr:nth-child(even) {
-  background-color: #f9f9f9;
+    background-color: #f9f9f9;
 }
 
 tr:hover {
-  background-color: #eaeaea;
+    background-color: #eaeaea;
 }
 
 
 @media (max-width: 1024px) {
-  table {
-    width: 100%;
-  }
+    table {
+        width: 100%;
+    }
+
+    .ticket-section iframe {
+        height: auto;
+        width: 80%;
+    }
+
+    th {
+        font-size: .9rem;
+    }
+
+    td {
+        font-size: .7rem;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    .ticket-section h2 {
+       font-size: 1.1rem;
+    }
 
 }
