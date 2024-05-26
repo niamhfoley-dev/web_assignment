@@ -1,0 +1,257 @@
+html body {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #FE612C;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  margin-right: 20px;
+  background-color: white;
+  border-radius: 6px;
+  padding: 2px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 0; /* Optional, to remove default indentation */
+}
+
+nav ul li {
+  display: inline-block; /* If you want horizontal navigation */
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: black;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.home-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.hero-text {
+  margin: auto;
+  max-width: 65ch;
+}
+
+.hero-image {
+  z-index: -1;
+  height: 100vh;
+  width: 50vw;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3vh;
+}
+
+.section-header {
+  text-align: center;
+  padding-top: 60px;
+}
+
+.category {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10vw;
+  height: 30vh;
+  border: solid 1px black;
+  border-radius: 8px;
+  padding: 1em;
+}
+
+.category-text {
+  max-width: 65ch;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  background-color: #FE612C; /* Change this to your preferred background color */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  color: black; /* Change this to your preferred text color */
+  font-size: 24px; /* Adjust the font size as needed */
+  text-align: center;
+}
+
+.get-started {
+  display: flex;
+  height: 40vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-link {
+  display: block;
+  text-align: center;
+  background-color: #FE612C;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  width: 120px;
+  height: 20px;
+}
+
+.btn-link:hover {
+  background-color: #FFA12C;
+}
+
+/* General reset for the footer */
+footer {
+  background-color: #333; /* Dark background color */
+  color: #f2f2f2; /* Light text color for contrast */
+  padding: 20px 0; /* Padding for spacing */
+  text-align: center; /* Center-align all footer content */
+}
+
+/* Styling the footer content */
+.footer-content p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.footer-links {
+  list-style-type: none; /* Remove bullets */
+  margin: 10px 0 0; /* Add some margin */
+  padding: 0;
+  display: flex; /* Flexbox to align links horizontally */
+  justify-content: center;
+  gap: 15px; /* Spacing between links */
+}
+
+.footer-links li {
+  margin: 0;
+}
+
+.footer-links a {
+  color: #f2f2f2; /* Same as text color */
+  text-decoration: none; /* Remove underline */
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+@media (max-width: 1024px) {
+  .logo {
+    height: 20px;
+    width: auto;
+    margin-right: 10px;
+  }
+
+  nav ul li {
+    display: inline-block; /* If you want horizontal navigation */
+    margin-right: 10px;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+  }
+
+  .home-section {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .hero-text {
+    margin-left: 1em;
+    margin-right: 1em;
+    max-width: 65ch;
+  }
+
+  .hero-text h1 {
+    font-size: 1.4rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .hero-image {
+    z-index: -1;
+    height: 50vh;
+    width: 100%;
+  }
+
+  .category-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+  }
+
+  .category-container .category:first-child {
+    flex-direction: column;
+  }
+
+  .category-container .category:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+
+  .category-container .category:last-child {
+    flex-direction: column;
+  }
+
+  .category {
+    gap: 1em;
+    height: fit-content;
+  }
+}
